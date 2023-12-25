@@ -1,0 +1,130 @@
+/* Resetting default styles */
+/* Box model reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  /* Basic body appearance */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling the main content container */
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button styles */
+  /* Style for buttons */
+  button {
+    padding: 12px 24px;
+    margin-top: 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for buttons */
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Input styles */
+  /* Styling for input fields */
+  input[type="text"],
+  input[type="number"],
+  input[type="date"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Error message box */
+  /* Style for error messages */
+  .error-box {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+    background-color: #f9d6d5;
+    border-radius: 5px;
+    text-align: center;
+    animation: fadeOut 3s ease-in-out;
+  }
+  
+  /* Keyframe animation for fading out */
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* Table styles */
+  /* Styling for tables */
+  .task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+  }
+  
+  .task-table th,
+  .task-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .task-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  /* Additional task styling */
+  /* Background colors for completed and overdue tasks */
+  .completed-task {
+    background-color: #d4edda;
+  }
+  
+  .overdue-task {
+    background-color: #f8d7da;
+  }
+  
+  /* Action buttons */
+  /* Styling for action buttons */
+  .action-btn {
+    padding: 8px;
+    margin-right: 5px;
+    background-color: #e0e0e0; /* Grey background */
+    color: white;
+    border: 1px solid #ffffff; /* White border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for action buttons */
+  .action-btn:hover {
+    background-color: #c6c6c6; /* Darker grey on hover */
+  }
+  

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My ToDo List</h1>
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <input type="date" id="dueDate">
+    <input type="text" id="descriptionInput" placeholder="Enter description">
+    <input type="number" id="priorityInput" placeholder="Priority (0-5)">
+    <button onclick="addTask()">Add Task</button>
+    <div id="errorBox" class="error-box"></div>
+
+    <h2>Filter Tasks</h2>
+    <button onclick="sortByDueDate()">Sort by Due Date</button>
+    <button onclick="sortByPriority()">Sort by Priority</button>
+
+    <h2>Tasks to be Done</h2>
+    <table id="todoTable" class="task-table">
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Description</th>
+          <th>Due Date</th>
+          <th>Priority</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="todoList"></tbody>
+    </table>
+
+    <h2>Completed Tasks</h2>
+    <table id="completedTable" class="task-table">
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Description</th>
+          <th>Due Date</th>
+          <th>Priority</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="completedList"></tbody>
+    </table>
+
+    <h2>Overdue Tasks</h2>
+    <table id="overdueTable" class="task-table">
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Description</th>
+          <th>Due Date</th>
+          <th>Priority</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="overdueList"></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
